@@ -24,7 +24,10 @@ Once you have drawn the map, click on the cell corresponding to the algorithm yo
 
 
 When the Dijkstra's algorithm is chosen -
+
 ![The starting window of the simulator](./images/dijkstras.png)
 
+
 When the A* algorithm is chosen -
+
 ![The starting window of the simulator](./images/a_star.png)
