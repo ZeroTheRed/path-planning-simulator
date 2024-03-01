@@ -15,22 +15,33 @@ The dependencies that will be installed are
 When you start off the simulator, you will be greeted with a basic UI as shown below
 
 
-![The starting window of the simulator](./images/start_sim.png)
+![The starting window of the simulator](./images/mainwindow.png)
 
 
-You should draw an obstacle map before running the simulator, so be sure to click on the rectangles 
-listed above to choose your start point, goal point, and draw the obstacles as you wish. An example map drawn is shown here.
-Once you have drawn the map, click on the cell corresponding to the algorithm you want to run and hit "Enter".
+The dropdown box allows you to choose which algorithm you want to simulate. By default, A* is selected. The main window shows the obstacle map
+* Black pixels are obstacles
+* <span style="color:red">Red</span> pixels are goal nodes
+* Green pixels are start nodes
+* Yellow pixels are the nodes that have been searched
+* Blue pixels are the nodes that belong to the final path computed by the algorithm
+You can also select with distance metric you want the algorithm to use between Manhattan (or Taxicab) distance or Euclidean distance.
+* Simulate - Once the algorithm and the distance metric is chosen, pressing this button will begin the simulation
+* Randomize map - Pressing this button will re-scatter all nodes to produce a random obstacle map
+The simulation also times the algorithm's runtime, which is display in a terminal window for now
+
+Here's how the simulation results look like for the Dijkstra's and A* algorithm respectively 
+
+![The starting window of the simulator](./images/dijkstra_simulated.png)
 
 
-![The starting window of the simulator](./images/sim_with_sample_map.png)
+![The starting window of the simulator](./images/astar_simulated.png)
 
+## Current bugs
+* The Dijkstra's algorithm simulation stops prematurely. The search space expands upto half of the screen and concludes that the goal isn't found
+* Changing the algorithm type and starting the simulation without changing the map results in the path visually overwriting the old one. Probably not desired if one wants to compare both paths
+  
+## To-do
+* I plan on providing the option of either going for a pixel-scattered obstacle map or a randomly generated obstacle line maze. The latter would be neater but harder to implement
+* Other algorithms to be implemented: D*, RRT, RRT*, Anytime A*, LPA*, Potential Field Map
+* Show the elapsed simulation time in the Qt window instead of a terminal window
 
-When the Dijkstra's algorithm is chosen -
-
-![The starting window of the simulator](./images/dijkstras.png)
-
-
-When the A* algorithm is chosen -
-
-![The starting window of the simulator](./images/a_star.png)
