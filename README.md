@@ -35,3 +35,13 @@ Here's how the simulation results look like for the Dijkstra's and A* algorithm 
 
 
 ![The starting window of the simulator](./images/astar_simulated.png)
+
+## Current bugs
+* The Dijkstra's algorithm simulation stops prematurely. The search space expands upto half of the screen and concludes that the goal isn't found
+* Changing the algorithm type and starting the simulation without changing the map results in the path visually overwriting the old one. Probably not desired if one wants to compare both paths
+  
+## To-do
+* I plan on providing the option of either going for a pixel-scattered obstacle map or a randomly generated obstacle line maze. The latter would be neater but harder to implement
+* Other algorithms to be implemented: D*, RRT, RRT*, Anytime A*, LPA*, Potential Field Map
+* Show the elapsed simulation time in the Qt window instead of a terminal window
+
