@@ -15,22 +15,23 @@ The dependencies that will be installed are
 When you start off the simulator, you will be greeted with a basic UI as shown below
 
 
-![The starting window of the simulator](./images/start_sim.png)
+![The starting window of the simulator](./images/mainwindow.png)
 
 
-You should draw an obstacle map before running the simulator, so be sure to click on the rectangles 
-listed above to choose your start point, goal point, and draw the obstacles as you wish. An example map drawn is shown here.
-Once you have drawn the map, click on the cell corresponding to the algorithm you want to run and hit "Enter".
+The dropdown box allows you to choose which algorithm you want to simulate. By default, A* is selected. The main window shows the obstacle map
+* Black pixels are obstacles
+* <span style="color:red">Red</span> pixels are goal nodes
+* Green pixels are start nodes
+* Yellow pixels are the nodes that have been searched
+* Blue pixels are the nodes that belong to the final path computed by the algorithm
+You can also select with distance metric you want the algorithm to use between Manhattan (or Taxicab) distance or Euclidean distance.
+* Simulate - Once the algorithm and the distance metric is chosen, pressing this button will begin the simulation
+* Randomize map - Pressing this button will re-scatter all nodes to produce a random obstacle map
+The simulation also times the algorithm's runtime, which is display in a terminal window for now
+
+Here's how the simulation results look like for the A* and Dijkstra's algorithm respectively
+
+![The starting window of the simulator](./images/dijkstra_simulated.png)
 
 
-![The starting window of the simulator](./images/sim_with_sample_map.png)
-
-
-When the Dijkstra's algorithm is chosen -
-
-![The starting window of the simulator](./images/dijkstras.png)
-
-
-When the A* algorithm is chosen -
-
-![The starting window of the simulator](./images/a_star.png)
+![The starting window of the simulator](./images/astar_simulated.png)
