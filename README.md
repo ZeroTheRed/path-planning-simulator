@@ -29,7 +29,7 @@ You can also select with distance metric you want the algorithm to use between M
 * Randomize map - Pressing this button will re-scatter all nodes to produce a random obstacle map
 The simulation also times the algorithm's runtime, which is display in a terminal window for now
 
-Here's how the simulation results look like for the A* and Dijkstra's algorithm respectively
+Here's how the simulation results look like for the Dijkstra's and A* algorithm respectively 
 
 ![The starting window of the simulator](./images/dijkstra_simulated.png)
 
