@@ -1,12 +1,15 @@
 # Path Planning Simulator
 
-An interactive simulator to showcase the Dijsktra's and A* search algorithms
+An interactive simulator to showcase the Dijsktra's and A* search algorithms. **Note: The simulator is constantly being worked on, and I plan on adding new motion planning algorithms to the simulator to demonstrate. Currently, I'm working on implementing D\* and RRT\***.
 
 ## Installation
 Install the necessary dependencies using this command in your shell
 ```python
 pip install -r requirements.txt
 ```
+The dependencies that will be installed are
+* **numpy** - For array operations. Numpy documentation can be found [here](https://numpy.org/doc)
+* **pyqt6** - The PyQt6 UI library. PyQt6 documentation can be found [here](https://doc.qt.io/qtforpython-6/)
 
 ## Running the simulator
 When you start off the simulator, you will be greeted with a basic UI as shown below
